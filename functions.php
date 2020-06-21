@@ -4,7 +4,7 @@
 function connect(){
     try {
     $options = [PDO::ATTR_DEFAULT_FETCH_MODE=>PDO::FETCH_ASSOC ];
-     $cn = new PDO("mysql:host=localhost;dbname=etudiantphp;","root","(ARDU1CEceno)",$options);
+     $cn = new PDO("mysql:host=localhost;dbname=etudiantphp;","root","root",$options);
      $cn ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     } catch (PDOException $e) {
         echo 'Connection failed: ' . $e->getMessage();
